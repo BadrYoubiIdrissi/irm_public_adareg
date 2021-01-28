@@ -1,0 +1,20 @@
+# @package _global_
+
+module:
+  criterion:
+    add_trivial: True
+    reg_strength: 100 
+  model:
+    nb_layers: 2
+    nb_hidden_neur: 5
+
+logger:
+  experiment:
+    group: irmv1_cammelcow_nonlinear
+
+defaults:
+  - base
+  - override /datamodule: cammel_cow
+  - override /module/metrics: classification
+  - override /module/criterion/error_cost: bce
+  - override /module/model: nonlinear

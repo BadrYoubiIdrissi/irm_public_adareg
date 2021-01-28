@@ -1,0 +1,9 @@
+# @package _global_
+
+defaults:
+  - override /datamodule: regression
+  - override /module: base
+  - override /module/model: linear
+  - override /module/criterion: irmv1
+  - override /module/optimizer: adam
+  - override /module/metrics: linear_irm

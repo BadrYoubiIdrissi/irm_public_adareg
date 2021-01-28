@@ -1,0 +1,4 @@
+_target_: configuration.get_partial
+_partial_: module.gradient_manager.soft_adareg.SoftAdaptiveRegularizer
+beta: 0.99
+eps: 1e-15

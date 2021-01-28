@@ -1,0 +1,11 @@
+_target_: module.base_module.BaseModule
+model: ???
+criterion: ???
+optimizer: ???
+metrics: ???
+
+defaults:
+  - model: null
+  - criterion: null
+  - optimizer: null
+  - metrics: null

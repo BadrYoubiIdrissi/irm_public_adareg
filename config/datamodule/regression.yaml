@@ -1,0 +1,4 @@
+_target_: datamodule.linear.Regression
+
+defaults:
+  - linear_base

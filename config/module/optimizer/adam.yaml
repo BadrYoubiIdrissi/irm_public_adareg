@@ -1,0 +1,3 @@
+_target_: configuration.get_partial
+_partial_: torch.optim.Adam
+lr: 0.001

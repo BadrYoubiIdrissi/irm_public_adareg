@@ -1,0 +1,3 @@
+_target_: datamodule.linear.CammelCow
+defaults:
+  - linear_base

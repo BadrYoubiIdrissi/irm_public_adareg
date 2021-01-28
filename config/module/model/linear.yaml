@@ -1,0 +1,5 @@
+_target_: configuration.get_partial
+_partial_: module.model.linear.LinearModel
+input_dim: ${datamodule.dim_in}
+output_dim: ${datamodule.dim_out}
+bias: False

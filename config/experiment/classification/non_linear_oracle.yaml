@@ -1,0 +1,21 @@
+# @package _global_
+
+module:
+  model:
+    nb_layers: 2
+    nb_hidden_neur: 5
+
+logger:
+  experiment:
+    group: erm_cammelcow_nonlinear_oracle
+
+datamodule:
+  is_oracle: True
+
+defaults:
+  - base
+  - override /datamodule: cammel_cow
+  - override /module/criterion: erm
+  - override /module/metrics: classification
+  - override /module/criterion/error_cost: bce
+  - override /module/model: nonlinear

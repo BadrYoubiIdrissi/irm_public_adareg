@@ -1,0 +1,6 @@
+_target_: configuration.get_partial
+_partial_: module.gradient_manager.simple_adareg.SimpleAdaptiveRegularizer
+threshold: 0.00001
+init_reg_strength: 1
+reg_multiplier: 10
+beta: 0.99

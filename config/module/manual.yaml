@@ -1,0 +1,7 @@
+_target_: module.manual_module.ManualModule
+gradient_manager: ???
+
+defaults:
+  - base
+  - gradient_manager: null
+  

@@ -1,0 +1,18 @@
+# @package _global_
+
+logger:
+  experiment:
+    group: irmv1_regression_simple_manyseeds_longer
+
+trainer:
+  max_epochs: 30000
+
+module:
+  criterion:
+    reg_strength: 1.0 
+    err_strength: 1e-5
+
+defaults:
+  - base
+  - override /datamodule: regression_simple
+  - override /module/criterion: irmv1

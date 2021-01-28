@@ -1,0 +1,3 @@
+checkpoint:
+  _target_: pytorch_lightning.callbacks.ModelCheckpoint
+  monitor: losses/valid/erm

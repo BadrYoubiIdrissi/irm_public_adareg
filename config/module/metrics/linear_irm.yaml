@@ -1,0 +1,12 @@
+_target_: configuration.get_partial
+_partial_: module.metrics.linear_irm.LinearIRMMetrics
+log_freq:
+  train: 10
+  valid: 100
+  test: 1
+max_epochs: ${trainer.max_epochs}
+metric_dict: 
+  train: {}
+  valid: {}
+  test: {}
+

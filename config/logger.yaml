@@ -1,0 +1,27 @@
+logger:
+  _target_: pytorch_lightning.loggers.WandbLogger 
+  experiment:
+    _target_: wandb.init
+    project: irm
+    save_code: True
+    name: ${job.name}
+    reinit: True
+
+important_choices:
+  - module/criterion
+  - module/model
+  - module/gradient_manager
+  - datamodule
+
+choices: ${hydra:choices}
+overrides: ${hydra:overrides}
+
+activate:
+  test: True
+  watch_model_grads: False
+
+job:
+  id: ${hydra:job.id}
+  num: ${hydra:job.num}
+  name: ${hydra:job.name}
+  seed: ${random_seed:}

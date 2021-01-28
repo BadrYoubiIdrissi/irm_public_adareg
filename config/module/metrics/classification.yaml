@@ -1,0 +1,5 @@
+defaults:
+  - linear_irm
+  - list@metric_dict.train: accuracy
+  - list@metric_dict.valid: accuracy
+  - list@metric_dict.test: accuracy

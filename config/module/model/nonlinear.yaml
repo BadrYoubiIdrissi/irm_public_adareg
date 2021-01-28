@@ -1,0 +1,6 @@
+_target_: configuration.get_partial
+_partial_: module.model.nonlinear.SimpleNonLinearModel
+input_dim: ${datamodule.dim_in}
+nb_layers: 1
+nb_hidden_neur: 8
+output_dim: ${datamodule.dim_out}

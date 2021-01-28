@@ -1,0 +1,4 @@
+_target_: datamodule.linear.SmallInvMargin
+
+defaults:
+  - linear_base

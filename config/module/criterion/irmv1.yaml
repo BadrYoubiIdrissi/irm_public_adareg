@@ -1,0 +1,9 @@
+_target_: configuration.get_partial
+_partial_: module.criterion.irmv1.IRMv1
+nb_envs: ${datamodule.n_envs}
+split_position: -1
+reg_strength: 1e6
+err_strength: 1
+
+defaults:
+  - error_cost: mse

@@ -1,0 +1,19 @@
+# @package _global_
+
+logger:
+  experiment:
+    group: erm_regression_simple_oracle_manyseeds_longer
+
+trainer:
+  max_epochs: 30000
+
+datamodule:
+  is_oracle: True
+
+defaults:
+  - override /datamodule: regression_simple
+  - override /module: base
+  - override /module/model: linear
+  - override /module/criterion: erm
+  - override /module/optimizer: adam
+  - override /module/metrics: linear_irm

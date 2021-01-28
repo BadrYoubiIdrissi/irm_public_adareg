@@ -1,0 +1,10 @@
+# @package _global_
+
+defaults:
+  - override /datamodule: cammel_cow
+  - override /module: base
+  - override /module/model: linear
+  - override /module/optimizer: adam
+  - override /module/metrics: classification
+  - override /module/criterion: erm
+  - override /module/criterion/error_cost: bce

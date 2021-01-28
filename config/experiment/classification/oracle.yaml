@@ -1,0 +1,11 @@
+# @package _global_
+
+logger:
+  experiment:
+    group: erm_linear_cammel_cow_oracle
+
+datamodule:
+  is_oracle: True
+
+defaults:
+  - base

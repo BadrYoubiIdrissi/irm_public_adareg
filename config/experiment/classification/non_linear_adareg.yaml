@@ -1,0 +1,26 @@
+# @package _global_
+
+module:
+  criterion:
+    add_trivial: True
+  model:
+    nb_layers: 2
+    nb_hidden_neur: 5
+  gradient_manager:
+    beta: 0.5
+    threshold: 1e-8
+    reg_multiplier: 2
+
+logger:
+  experiment:
+    group: irmv1_cammelcow_nonlinear_adareg
+
+defaults:
+  - override /module: manual
+  - override /module/model: nonlinear
+  - override /module/criterion: irmv1
+  - override /module/criterion/error_cost: bce
+  - override /module/optimizer: adam
+  - override /module/gradient_manager: adareg
+  - override /datamodule: cammel_cow
+  - override /module/metrics: classification

@@ -1,0 +1,15 @@
+# @package _global_
+
+logger:
+  experiment:
+    group: irmv1_regression_simple_simple_adareg_manyseeds_longer
+
+trainer:
+  max_epochs: 30000
+
+defaults:
+  - base
+  - override /module: manual
+  - override /module/gradient_manager: simple_adareg 
+  - override /datamodule: regression_simple
+  - override /module/criterion: irmv1

@@ -1,0 +1,6 @@
+defaults:
+  - trainer
+  - logger
+  - datamodule: regression
+  - module: base
+  - callbacks: checkpoint

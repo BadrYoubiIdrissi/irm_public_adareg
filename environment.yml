@@ -1,0 +1,20 @@
+name: torch
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - pip=20.3.3
+  - python=3.8.5
+  - torchaudio=0.7.2
+  - torchvision=0.8.2
+  - pytorch=1.7.1=py3.8_cuda10.2.89_cudnn7.6.5_0
+  - cudatoolkit=10.2
+  - pip:
+    - hydra-core --pre
+    - hydra-submitit-launcher
+    - wandb==0.10.12
+    - plotly
+    - tqdm
+    - pytorch-lightning
+    - higher
+    - matplotlib

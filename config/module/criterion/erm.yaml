@@ -1,0 +1,5 @@
+_target_: configuration.get_partial
+_partial_: module.criterion.erm.ERM
+
+defaults:
+  - error_cost: mse
