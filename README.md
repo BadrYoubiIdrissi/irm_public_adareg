@@ -1,6 +1,6 @@
-## Improvements on IRM
+## Improvements on Invariant Risk Minimization
 
-This repo contains some ideas I've tried to implement to improve on IRM.
+This repo contains some ideas I've tried to implement to improve on [IRM](http://arxiv.org/abs/1907.02893). Please refer to the included project report for more details. If you have trouble reproducing the experiments email me at badryoubiidrissi at gmail dot com.
 
 The code is very modular to encourage experimentation. I use [pytorch lightning](https://pytorch-lightning.readthedocs.io/en/latest/) (a pytorch framework) to organize the code into modules. Then I use [hydra](https://hydra.cc/) (a configuration manager) to choose which modules to use and to configure them properly. This way, all parameters can be overriden and finetuned automatically. I also keep track of the (large) configuration object to be able to compare runs.
 
